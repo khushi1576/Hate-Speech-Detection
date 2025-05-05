@@ -1,30 +1,122 @@
-# Hate Speech Detection Classifier 🚨
+# Hate Speech Detection
 
-This project uses deep learning and NLP techniques to classify tweets into three categories: 
-- **Hate Speech**
-- **Offensive Language**
-- **Neither**
+This project is a Hate Speech Classifier using Deep Learning and Natural Language Processing (NLP). It classifies tweets into three categories:
 
-The classifier is built using an LSTM model and includes a user-friendly GUI application built with `Tkinter` and `ttkbootstrap` for easy interaction. The app classifies the tweets based on the trained model and displays the classification results.
+* Hate Speech
+* Offensive Language
+* Neither
 
-## 🛠 Features
+The project includes a trained LSTM model, a tokenizer, and a user-friendly GUI using Tkinter and ttkbootstrap.
 
-- **Tweet Classification:** Classifies tweets into three categories: "Hate Speech", "Offensive Language", or "Neither".
-- **GUI Interface:** A modern and easy-to-use interface built using `Tkinter` and `ttkbootstrap` for seamless interaction.
-- **Text Preprocessing:** Includes text normalization, punctuation removal, stopword filtering, and lemmatization using NLTK.
-- **Model Training Script:** The LSTM model is trained on the dataset and saved for future use.
-- **Pre-trained Model:** The project comes with a pre-trained model ready for deployment.
-- **Tokenizer:** A saved tokenizer is included for easy preprocessing of input text.
+---
 
-## 📁 File Structure
+## 🚀 Features
 
-```plaintext
-Hate-Speech-Detection/
+* **Text Classification:** Classifies tweets into three categories.
+* **GUI Interface:** Simple interface to input and predict in real-time.
+* **Tokenizer & Pretrained Model:** Model and tokenizer saved for fast loading.
+
+---
+
+## 🗂 File Structure
+
+```
+HateSpeechDetection/
 │
-├── hate_speech.csv             # Dataset for training the model
-├── hatespeechmodel.py          # Model training script
-├── HateSpeechDetection.ipynb   # Jupyter notebook for training the model
-├── gul.py                      # GUI script built with Tkinter
-├── tokenizer.pkl               # Tokenizer for input text preprocessing       
-├── requirements.txt            # List of required libraries
-└── README.md                   # Project documentation
+├── HateSpeechDetection.ipynb   # Jupyter notebook for training/testing
+├── hatespeechmodel.py          # Script to train/save the model
+├── gul.py                      # GUI using Tkinter + ttkbootstrap
+├── hate_speech.csv             # Training dataset
+├── tokenizer.pkl               # Saved tokenizer for text preprocessing
+├── hate_speech_model.h5        # Trained LSTM model file
+├── requirements.txt            # Dependencies list
+├── LICENSE                     # MIT License file
+└── README.md                   # Project documentation (this file)
+```
+
+---
+
+## 💻 Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/HateSpeechDetection.git
+cd HateSpeechDetection
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+### 1. Train the Model (Optional if already trained)
+
+```bash
+python hatespeechmodel.py
+```
+
+### 2. Run the GUI App
+
+```bash
+python gul.py
+```
+
+Use the input field to enter a tweet, then click the **"Classify"** button to view the result.
+
+---
+
+## 📦 Requirements
+
+* Python 3.x
+* pandas
+* numpy
+* keras
+* tensorflow
+* sklearn
+* nltk
+* ttkbootstrap
+* tkinter
+
+Install via:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🧠 Dataset
+
+The dataset (`hate_speech.csv`) contains tweets labeled as:
+
+* **0**: Hate Speech
+* **1**: Offensive Language
+* **2**: Neither
+
+It is used to train the LSTM model using Keras.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+* [NLTK](https://www.nltk.org/)
+* [Keras](https://keras.io/)
+* [TensorFlow](https://www.tensorflow.org/)
+* [ttkbootstrap](https://github.com/israel-dryer/ttkbootstrap)
+* Dataset inspired by hate speech detection challenges
+
+---
+
+Made with ❤️ by \[Your Name]
