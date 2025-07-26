@@ -41,8 +41,8 @@ HateSpeechDetection/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/HateSpeechDetection.git
-cd HateSpeechDetection
+git clone https://github.com/khushi1576/Hate-Speech-Detection/
+cd Hate-Speech-Detection
 ```
 
 ### 2. Install Dependencies
