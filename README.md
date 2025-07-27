@@ -33,7 +33,9 @@ HateSpeechDetection/
 ├── LICENSE                     # MIT License file
 └── README.md                   # Project documentation (this file)
 ```
+## 📸 Screenshot
 
+> ![gui](gui.png)
 ---
 
 ## 💻 Installation & Setup
